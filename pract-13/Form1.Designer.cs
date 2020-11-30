@@ -66,6 +66,8 @@
             this.contextMenuAnswer = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.GetAnswerContext = new System.Windows.Forms.ToolStripMenuItem();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -442,6 +444,10 @@
             this.Exit.Size = new System.Drawing.Size(180, 22);
             this.Exit.Text = "Выход";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -522,6 +528,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuAnswer;
         private System.Windows.Forms.ToolStripMenuItem GetAnswerContext;
         private System.Windows.Forms.ToolStripMenuItem Exit;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
