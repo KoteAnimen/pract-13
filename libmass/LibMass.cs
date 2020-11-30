@@ -53,7 +53,7 @@ namespace libmass
                     }
 
                 }
-                read.Close();// закрываем диалоговое окно
+                read.Close();// закрываем поток чтения
             }
 
         }
@@ -73,7 +73,7 @@ namespace libmass
                     }
 
                 }
-                file.Close();// закрываем биалоговое окно
+                file.Close();// закрываем поток записи
             }
         }
 
