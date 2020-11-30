@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using libmass;
 
 namespace pract_13
 {
@@ -15,6 +16,36 @@ namespace pract_13
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void OpenTable_Click(object sender, EventArgs e)
+        {
+            LibMass.OpenDialogToOpen(ref tableNumbers, openFileDialog1);
+        }
+
+        private void SaveTable_Click(object sender, EventArgs e)
+        {
+            LibMass.OpenDialogToSave(ref tableNumbers, saveFileDialog1);
+        }
+
+        private void ClearTable_Click(object sender, EventArgs e)
+        {
+            LibMass.ClearTable(ref tableNumbers);
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void CreateRandomTable_Click(object sender, EventArgs e)
+        {
+            LibMass.InstantRandomTable(tableNumbers);
+        }
+
+        private void CreateRandomTableContext_Click(object sender, EventArgs e)
+        {
+            LibMass.InstantRandomTable(tableNumbers);
         }
     }
 }

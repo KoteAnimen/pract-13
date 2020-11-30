@@ -153,18 +153,21 @@
             this.OpenTable.Name = "OpenTable";
             this.OpenTable.Size = new System.Drawing.Size(180, 22);
             this.OpenTable.Text = "Открыть";
+            this.OpenTable.Click += new System.EventHandler(this.OpenTable_Click);
             // 
             // SaveTable
             // 
             this.SaveTable.Name = "SaveTable";
             this.SaveTable.Size = new System.Drawing.Size(180, 22);
             this.SaveTable.Text = "Сохранить";
+            this.SaveTable.Click += new System.EventHandler(this.SaveTable_Click);
             // 
             // ClearTable
             // 
             this.ClearTable.Name = "ClearTable";
             this.ClearTable.Size = new System.Drawing.Size(180, 22);
             this.ClearTable.Text = "Очистить";
+            this.ClearTable.Click += new System.EventHandler(this.ClearTable_Click);
             // 
             // AboutUs
             // 
@@ -181,6 +184,7 @@
             this.CreateRandomTable.Size = new System.Drawing.Size(23, 22);
             this.CreateRandomTable.Text = "Создать рандомную таблицу";
             this.CreateRandomTable.ToolTipText = "Создать рандомную таблицу";
+            this.CreateRandomTable.Click += new System.EventHandler(this.CreateRandomTable_Click);
             // 
             // groupBox1
             // 
@@ -376,7 +380,7 @@
             this.FillTable,
             this.CreateRandomTableContext});
             this.contextMenuTable.Name = "contextMenuTable";
-            this.contextMenuTable.Size = new System.Drawing.Size(231, 48);
+            this.contextMenuTable.Size = new System.Drawing.Size(231, 70);
             // 
             // FillTable
             // 
@@ -389,6 +393,7 @@
             this.CreateRandomTableContext.Name = "CreateRandomTableContext";
             this.CreateRandomTableContext.Size = new System.Drawing.Size(230, 22);
             this.CreateRandomTableContext.Text = "Создать случайную таблицу";
+            this.CreateRandomTableContext.Click += new System.EventHandler(this.CreateRandomTableContext_Click);
             // 
             // answer
             // 
@@ -443,6 +448,7 @@
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(180, 22);
             this.Exit.Text = "Выход";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // openFileDialog1
             // 
