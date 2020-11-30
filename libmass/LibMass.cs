@@ -23,6 +23,21 @@ namespace libmass
                 }
             }
         }
+
+        public static void InstantRandomTable(DataGridView dgw)
+        {
+            Random rnd = new Random();
+            dgw.ColumnCount = rnd.Next(0, 100);
+            dgw.RowCount = rnd.Next(0, 100);
+            for (int i = 0; i < dgw.RowCount; i++)// заполняем таблицу рандомными значениями
+            {
+                for (int j = 0; j < dgw.ColumnCount; j++)
+                {
+                    dgw.Rows[i].Cells[j].Value = rnd.Next(0, 100);
+                }
+            }
+
+        }
         public static void OpenDialogToOpen(ref DataGridView dgw, OpenFileDialog ofd1)// функция открытия файла с сохраненной таблицей
         {
             if (ofd1.ShowDialog() == DialogResult.OK)// если диалог открыт
