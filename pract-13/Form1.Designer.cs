@@ -41,7 +41,6 @@
             this.SaveTable = new System.Windows.Forms.ToolStripMenuItem();
             this.ClearTable = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutUs = new System.Windows.Forms.ToolStripMenuItem();
-            this.Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.CreateRandomTable = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -66,6 +65,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.contextMenuAnswer = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.GetAnswerContext = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -87,8 +87,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.справкаToolStripMenuItem,
-            this.Exit});
+            this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -100,7 +99,8 @@
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OpenTable,
             this.SaveTable,
-            this.ClearTable});
+            this.ClearTable,
+            this.Exit});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -169,12 +169,6 @@
             this.AboutUs.Name = "AboutUs";
             this.AboutUs.Size = new System.Drawing.Size(180, 22);
             this.AboutUs.Text = "О программе";
-            // 
-            // Exit
-            // 
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(54, 20);
-            this.Exit.Text = "Выход";
             // 
             // CreateRandomTable
             // 
@@ -442,6 +436,12 @@
             this.GetAnswerContext.Size = new System.Drawing.Size(160, 22);
             this.GetAnswerContext.Text = "Получить ответ";
             // 
+            // Exit
+            // 
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(180, 22);
+            this.Exit.Text = "Выход";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,7 +493,6 @@
         private System.Windows.Forms.ToolStripMenuItem ClearTable;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutUs;
-        private System.Windows.Forms.ToolStripMenuItem Exit;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel sizeTable;
         private System.Windows.Forms.ToolStripStatusLabel numerBox;
@@ -522,6 +521,7 @@
         private System.Windows.Forms.Button GetAnswer;
         private System.Windows.Forms.ContextMenuStrip contextMenuAnswer;
         private System.Windows.Forms.ToolStripMenuItem GetAnswerContext;
+        private System.Windows.Forms.ToolStripMenuItem Exit;
     }
 }
 
