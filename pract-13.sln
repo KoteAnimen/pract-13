@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pract-13", "pract-13\pract-13.csproj", "{1DD333DC-127D-4EEB-8F5F-7070CB20C779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libmass", "E:\МДК 01.01 Практосы\pract 3\libmass\libmass.csproj", "{B5C06B42-1386-4E37-BD62-3BF795AC29C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libmass", "libmass\libmass.csproj", "{B5C06B42-1386-4E37-BD62-3BF795AC29C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
