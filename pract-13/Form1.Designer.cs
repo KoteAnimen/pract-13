@@ -170,8 +170,7 @@
             // numerBox
             // 
             this.numerBox.Name = "numerBox";
-            this.numerBox.Size = new System.Drawing.Size(87, 17);
-            this.numerBox.Text = "Номер ячейки";
+            this.numerBox.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStrip1
             // 
@@ -215,9 +214,11 @@
             this.tableNumbers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableNumbers.ContextMenuStrip = this.contextMenuTable;
             this.tableNumbers.Location = new System.Drawing.Point(7, 20);
+            this.tableNumbers.MultiSelect = false;
             this.tableNumbers.Name = "tableNumbers";
             this.tableNumbers.Size = new System.Drawing.Size(762, 194);
             this.tableNumbers.TabIndex = 0;
+            this.tableNumbers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ChangeNumberBox);
             // 
             // contextMenuTable
             // 
@@ -356,9 +357,19 @@
             this.countColumns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.countColumns.Location = new System.Drawing.Point(7, 81);
+            this.countColumns.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.countColumns.Name = "countColumns";
             this.countColumns.Size = new System.Drawing.Size(120, 20);
             this.countColumns.TabIndex = 2;
+            this.countColumns.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.countColumns.ValueChanged += new System.EventHandler(this.ChangeSiseByColumns);
             // 
             // label1
@@ -377,9 +388,19 @@
             this.countRows.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.countRows.Location = new System.Drawing.Point(7, 35);
+            this.countRows.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.countRows.Name = "countRows";
             this.countRows.Size = new System.Drawing.Size(120, 20);
             this.countRows.TabIndex = 0;
+            this.countRows.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.countRows.ValueChanged += new System.EventHandler(this.ChangeSizeByRows);
             // 
             // groupBox3

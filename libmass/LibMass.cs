@@ -31,8 +31,8 @@ namespace libmass
         public static void InstantRandomTable(DataGridView dgw)
         {
             Random rnd = new Random();
-            dgw.ColumnCount = rnd.Next(0, 100);
-            dgw.RowCount = rnd.Next(0, 100);
+            dgw.ColumnCount = rnd.Next(1, 100);
+            dgw.RowCount = rnd.Next(1, 100);
             for (int i = 0; i < dgw.RowCount; i++)// заполняем таблицу рандомными значениями
             {
                 for (int j = 0; j < dgw.ColumnCount; j++)
