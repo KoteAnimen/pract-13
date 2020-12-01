@@ -146,8 +146,9 @@
             // AboutUs
             // 
             this.AboutUs.Name = "AboutUs";
-            this.AboutUs.Size = new System.Drawing.Size(149, 22);
+            this.AboutUs.Size = new System.Drawing.Size(180, 22);
             this.AboutUs.Text = "О программе";
+            this.AboutUs.Click += new System.EventHandler(this.AboutUs_Click);
             // 
             // statusStrip1
             // 
@@ -224,7 +225,7 @@
             this.FillTable,
             this.CreateRandomTableContext});
             this.contextMenuTable.Name = "contextMenuTable";
-            this.contextMenuTable.Size = new System.Drawing.Size(231, 70);
+            this.contextMenuTable.Size = new System.Drawing.Size(231, 48);
             // 
             // FillTable
             // 

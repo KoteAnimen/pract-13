@@ -75,5 +75,10 @@ namespace pract_13
             LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
             LibMass.FillTable(tableNumbers, (int)minNumber.Value, (int)maxNumber.Value);
         }
+
+        private void AboutUs_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Филяк, ИСП-31, вариант 1. Дана матрица размера M * N. Найти количество ее столбцов, элементы которых упорядочены по убыванию. ", "О программе");
+        }
     }
 }
