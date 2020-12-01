@@ -50,9 +50,24 @@ namespace pract_13
         }
 
         private void GetAnswer_Click(object sender, EventArgs e)
-        {
+        {            
             
-            FindColumns.FindCountColumns()
+        }
+
+        private void FillMainTable_Click(object sender, EventArgs e)
+        {
+            LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
+            LibMass.FillTable(tableNumbers, (int)minNumber.Value, (int)maxNumber.Value);
+        }
+
+        private void ChangeSizeByRows(object sender, EventArgs e)
+        {
+            LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
+        }
+
+        private void ChangeSiseByColumns(object sender, EventArgs e)
+        {
+            LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
         }
     }
 }
