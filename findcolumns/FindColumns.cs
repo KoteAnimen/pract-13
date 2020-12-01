@@ -10,9 +10,6 @@ namespace findcolumns
 {
     public class FindColumns
     {
-        public static int FindCountColumns(DataGridView table)
-        {
-            
-        }
+        
     }
 }
