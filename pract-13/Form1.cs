@@ -69,5 +69,11 @@ namespace pract_13
         {
             LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
         }
+
+        private void FillTable_Click(object sender, EventArgs e)
+        {
+            LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
+            LibMass.FillTable(tableNumbers, (int)minNumber.Value, (int)maxNumber.Value);
+        }
     }
 }

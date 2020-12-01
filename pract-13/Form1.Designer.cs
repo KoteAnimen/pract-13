@@ -224,13 +224,14 @@
             this.FillTable,
             this.CreateRandomTableContext});
             this.contextMenuTable.Name = "contextMenuTable";
-            this.contextMenuTable.Size = new System.Drawing.Size(231, 48);
+            this.contextMenuTable.Size = new System.Drawing.Size(231, 70);
             // 
             // FillTable
             // 
             this.FillTable.Name = "FillTable";
             this.FillTable.Size = new System.Drawing.Size(230, 22);
             this.FillTable.Text = "Заполнить таблицу";
+            this.FillTable.Click += new System.EventHandler(this.FillTable_Click);
             // 
             // CreateRandomTableContext
             // 
