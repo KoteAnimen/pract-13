@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using libmass;
+using findcolumns;
 
 namespace pract_13
 {
@@ -46,6 +47,12 @@ namespace pract_13
         private void CreateRandomTableContext_Click(object sender, EventArgs e)
         {
             LibMass.InstantRandomTable(tableNumbers);
+        }
+
+        private void GetAnswer_Click(object sender, EventArgs e)
+        {
+            
+            FindColumns.FindCountColumns()
         }
     }
 }

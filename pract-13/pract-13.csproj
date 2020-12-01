@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\findcolumns\findcolumns.csproj">
+      <Project>{78766181-f59b-40cf-beb5-0413a1ee189e}</Project>
+      <Name>findcolumns</Name>
+    </ProjectReference>
     <ProjectReference Include="..\libmass\libmass.csproj">
       <Project>{b5c06b42-1386-4e37-bd62-3bf795ac29c2}</Project>
       <Name>libmass</Name>
