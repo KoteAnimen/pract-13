@@ -20,17 +20,17 @@ namespace pract_13
 
         private void OpenTable_Click(object sender, EventArgs e)
         {
-            LibMass.OpenDialogToOpen(ref tableNumbers, openFileDialog1);
+            LibMass.OpenDialogToOpen(tableNumbers, openFileDialog1);
         }
 
         private void SaveTable_Click(object sender, EventArgs e)
         {
-            LibMass.OpenDialogToSave(ref tableNumbers, saveFileDialog1);
+            LibMass.OpenDialogToSave(tableNumbers, saveFileDialog1);
         }
 
         private void ClearTable_Click(object sender, EventArgs e)
         {
-            LibMass.ClearTable(ref tableNumbers);
+            LibMass.ClearTable(tableNumbers);
         }
 
         private void Exit_Click(object sender, EventArgs e)
