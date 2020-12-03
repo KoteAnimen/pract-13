@@ -28,7 +28,7 @@ namespace findcolumns
                     }
                     else
                     {
-                        swichCounter = true;
+                        swichCounter = false;
                     }
                 }
                 if(swichCounter == true)
