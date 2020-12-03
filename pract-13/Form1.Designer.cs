@@ -110,28 +110,28 @@
             // OpenTable
             // 
             this.OpenTable.Name = "OpenTable";
-            this.OpenTable.Size = new System.Drawing.Size(132, 22);
+            this.OpenTable.Size = new System.Drawing.Size(133, 22);
             this.OpenTable.Text = "Открыть";
             this.OpenTable.Click += new System.EventHandler(this.OpenTable_Click);
             // 
             // SaveTable
             // 
             this.SaveTable.Name = "SaveTable";
-            this.SaveTable.Size = new System.Drawing.Size(132, 22);
+            this.SaveTable.Size = new System.Drawing.Size(133, 22);
             this.SaveTable.Text = "Сохранить";
             this.SaveTable.Click += new System.EventHandler(this.SaveTable_Click);
             // 
             // ClearTable
             // 
             this.ClearTable.Name = "ClearTable";
-            this.ClearTable.Size = new System.Drawing.Size(132, 22);
+            this.ClearTable.Size = new System.Drawing.Size(133, 22);
             this.ClearTable.Text = "Очистить";
             this.ClearTable.Click += new System.EventHandler(this.ClearTable_Click);
             // 
             // Exit
             // 
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(132, 22);
+            this.Exit.Size = new System.Drawing.Size(133, 22);
             this.Exit.Text = "Выход";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -461,6 +461,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.answer.Location = new System.Drawing.Point(6, 53);
             this.answer.Name = "answer";
+            this.answer.ReadOnly = true;
             this.answer.Size = new System.Drawing.Size(328, 20);
             this.answer.TabIndex = 0;
             // 

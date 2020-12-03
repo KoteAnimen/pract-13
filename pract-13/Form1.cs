@@ -53,8 +53,8 @@ namespace pract_13
         }
 
         private void GetAnswer_Click(object sender, EventArgs e)
-        {            
-            
+        {
+            answer.Text = FindColumns.CountColumns(tableNumbers).ToString();
         }
 
         private void FillMainTable_Click(object sender, EventArgs e)
