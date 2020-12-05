@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 
 namespace findcolumns
@@ -12,25 +13,22 @@ namespace findcolumns
     {
         public static int CountColumns(DataGridView dgw)
         {
-            bool swichCounter = false;
-            int counter = 0;
-            int currentNumber = 0;
-            int i, j = 0;
-            for(i = 0; i < dgw.ColumnCount; i++)
+            bool swichCounter;
+            int counter = 0;          
+            
+            for(int i = 0; i < dgw.ColumnCount; i++)
             {
-                currentNumber = (int)dgw[j, i].Value;
-                for(j = 0; j < dgw.RowCount; i++)
+                swichCounter = true;
+                for(int j = 0; j < dgw.RowCount - 1; j++)
                 {
-                    if(currentNumber < (int)dgw[i, j].Value)
-                    {
-                        currentNumber--;
-                        swichCounter = true;
-                    }
-                    else
+                    MessageBox.Show(i.ToString() + " " + j.ToString());
+                    if((int)dgw.Rows[j].Cells[i].Value < (int)dgw.Rows[j + 1].Cells[i].Value)
                     {
                         swichCounter = false;
+                        dgw.Rows[j].Cells[i].Style.BackColor = System.Drawing.Color.Red;
                     }
-                }
+                    
+                }                
                 if(swichCounter == true)
                 {
                     counter++;
