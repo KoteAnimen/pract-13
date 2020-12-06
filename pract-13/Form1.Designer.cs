@@ -110,28 +110,28 @@
             // OpenTable
             // 
             this.OpenTable.Name = "OpenTable";
-            this.OpenTable.Size = new System.Drawing.Size(133, 22);
+            this.OpenTable.Size = new System.Drawing.Size(132, 22);
             this.OpenTable.Text = "Открыть";
             this.OpenTable.Click += new System.EventHandler(this.OpenTable_Click);
             // 
             // SaveTable
             // 
             this.SaveTable.Name = "SaveTable";
-            this.SaveTable.Size = new System.Drawing.Size(133, 22);
+            this.SaveTable.Size = new System.Drawing.Size(132, 22);
             this.SaveTable.Text = "Сохранить";
             this.SaveTable.Click += new System.EventHandler(this.SaveTable_Click);
             // 
             // ClearTable
             // 
             this.ClearTable.Name = "ClearTable";
-            this.ClearTable.Size = new System.Drawing.Size(133, 22);
+            this.ClearTable.Size = new System.Drawing.Size(132, 22);
             this.ClearTable.Text = "Очистить";
             this.ClearTable.Click += new System.EventHandler(this.ClearTable_Click);
             // 
             // Exit
             // 
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(133, 22);
+            this.Exit.Size = new System.Drawing.Size(132, 22);
             this.Exit.Text = "Выход";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -423,13 +423,14 @@
             this.contextMenuAnswer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GetAnswerContext});
             this.contextMenuAnswer.Name = "contextMenuAnswer";
-            this.contextMenuAnswer.Size = new System.Drawing.Size(161, 26);
+            this.contextMenuAnswer.Size = new System.Drawing.Size(181, 48);
             // 
             // GetAnswerContext
             // 
             this.GetAnswerContext.Name = "GetAnswerContext";
-            this.GetAnswerContext.Size = new System.Drawing.Size(160, 22);
+            this.GetAnswerContext.Size = new System.Drawing.Size(180, 22);
             this.GetAnswerContext.Text = "Получить ответ";
+            this.GetAnswerContext.Click += new System.EventHandler(this.GetAnswerContext_Click);
             // 
             // label5
             // 

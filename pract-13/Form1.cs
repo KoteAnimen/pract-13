@@ -95,5 +95,10 @@ namespace pract_13
             numerBox.Text = "Номер строки - " + row.ToString() + " Номер столбца - " + column.ToString();
 
         }
+
+        private void GetAnswerContext_Click(object sender, EventArgs e)
+        {
+            answer.Text = FindColumns.CountColumns(tableNumbers).ToString();
+        }
     }
 }
