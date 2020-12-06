@@ -19,13 +19,11 @@ namespace findcolumns
             for(int i = 0; i < dgw.ColumnCount; i++)
             {
                 swichCounter = true;
-                for(int j = 0; j < dgw.RowCount - 1; j++)
+                for(int j = 1; j < dgw.RowCount; j++)
                 {
-                    MessageBox.Show(i.ToString() + " " + j.ToString());
-                    if((int)dgw.Rows[j].Cells[i].Value < (int)dgw.Rows[j + 1].Cells[i].Value)
+                    if((int)dgw.Rows[j - 1].Cells[i].Value < (int)dgw.Rows[j].Cells[i].Value)
                     {
-                        swichCounter = false;
-                        dgw.Rows[j].Cells[i].Style.BackColor = System.Drawing.Color.Red;
+                        swichCounter = false;                        
                     }
                     
                 }                
