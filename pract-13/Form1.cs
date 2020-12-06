@@ -67,12 +67,14 @@ namespace pract_13
         private void ChangeSizeByRows(object sender, EventArgs e)
         {
             LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
+            LibMass.FillTable(tableNumbers, (int)minNumber.Value, (int)maxNumber.Value);
             sizeTable.Text = "Размер таблицы -" + tableNumbers.RowCount + "x" + tableNumbers.ColumnCount;
         }
 
         private void ChangeSiseByColumns(object sender, EventArgs e)
         {
             LibMass.SizeTable(tableNumbers, (int)countColumns.Value, (int)countRows.Value);
+            LibMass.FillTable(tableNumbers, (int)minNumber.Value, (int)maxNumber.Value);
             sizeTable.Text = "Размер таблицы -" + tableNumbers.RowCount + "x" + tableNumbers.ColumnCount;
         }
 
